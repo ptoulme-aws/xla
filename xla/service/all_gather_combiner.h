@@ -51,7 +51,7 @@ class AllGatherCombiner : public HloModulePass {
   // Combine only all-gather ops with the same gather dimension.
   bool combine_by_dim_;
 
-  // Combine only all-gather ops with the same dtype.
+  // Combine all-gather ops with different dtypes.
   bool combine_different_dtypes_;
 };
 
